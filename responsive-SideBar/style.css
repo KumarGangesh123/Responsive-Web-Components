@@ -5,16 +5,16 @@
 
 body{
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: rgb(19, 25, 37);
     font-family: 'Courier New', Courier, monospace;
 }
 
 #container{
-    background-color: black;
+    background-color: rgb(19, 25, 37);
     margin: 0% auto;
     height: 70px;
     width: 100%;
-    color: #2272FF;
+    color: #BFA181;
     display: flex;
     position: fixed;
     z-index: -1;
@@ -39,7 +39,7 @@ body{
     display: flex;
     margin: .3% auto;
     position: none;
-    background-color: black;
+    background-color: rgb(19, 25, 37);
     transition: right 2s;
     position: fixed;
     font-weight: bolder;
@@ -47,7 +47,7 @@ body{
 
 #secondDiv span{
     font-weight: bolder;
-    color: black;
+    color: #BFA181;
     font-size: 35px;
     margin: 1% auto;
 }
@@ -58,18 +58,18 @@ body{
     font-size: 17px;
     margin: .3% auto;
     border-radius: 5px;
-    color: #2272FF;
+    color: #BFA181;
     transition: background 1s;
 }
 
 #secondDiv #crossIcon{
     opacity: 0;
-    color: #2272FF;
+    color: #BFA181;
     font-weight: bolder;
 }
 
 #secondDiv a:hover{
-    background-color: #2272FF;
+    background-color: #BFA181;
     color: white;
 }
 
@@ -88,7 +88,7 @@ body{
 #home h1, #aboutMe h1, #skills h1, #projects h1, #contactMe h1{
     font-size: 70px;
     font-weight: bolder;
-    color: #2272FF;
+    color: #BFA181;
     margin-top: 5%;
 }
 
@@ -107,7 +107,7 @@ body{
 
 @media(min-width: 300px){
     #container{
-        background-color: black;
+        background-color: rgb(19, 25, 37);
         display: flex;
         position: initial;
     }
@@ -157,7 +157,7 @@ body{
 
 @media(min-width: 550px){
     #container{
-        background-color: black;
+        background-color: rgb(19, 25, 37);
         display: flex;
         position: initial;
     }
@@ -207,7 +207,7 @@ body{
 
 @media(min-width: 900px){
     #container{
-        background-color: black;
+        background-color: rgb(19, 25, 37);
         /* position: static; */
         position: initial;
     }
