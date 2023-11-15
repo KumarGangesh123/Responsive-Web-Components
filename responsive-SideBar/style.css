@@ -1,0 +1,256 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#container{
+    background-color: black;
+    margin: 0% auto;
+    height: 70px;
+    width: 100%;
+    color: #2272FF;
+    display: flex;
+    position: fixed;
+    z-index: -1;
+}
+
+#container #threeBarsIcon{
+    font-weight: bolder;
+    font-size: 35px;
+    margin: auto 3.5%;
+    opacity: 0;
+}
+
+#container #navBarName{
+    font-weight: bolder;
+    font-size: 35px;
+    margin: auto 3%;
+}
+
+#container #secondDiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: .3% auto;
+    position: none;
+    background-color: black;
+    transition: right 2s;
+    position: fixed;
+    font-weight: bolder;
+}
+
+#secondDiv span{
+    font-weight: bolder;
+    color: black;
+    font-size: 35px;
+    margin: 1% auto;
+}
+
+#secondDiv a{
+    text-decoration: none;
+    padding: 1.8% 4%;
+    font-size: 17px;
+    margin: .3% auto;
+    border-radius: 5px;
+    color: #2272FF;
+    transition: background 1s;
+}
+
+#secondDiv #crossIcon{
+    opacity: 0;
+    color: #2272FF;
+    font-weight: bolder;
+}
+
+#secondDiv a:hover{
+    background-color: #2272FF;
+    color: white;
+}
+
+#home, #aboutMe, #skills, #projects, #contactMe{
+    position: none;
+    top: 70px;
+    margin: 5% 7%;
+    width: 80%;
+    height: auto;
+    padding: 3%;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+}
+
+#home h1, #aboutMe h1, #skills h1, #projects h1, #contactMe h1{
+    font-size: 70px;
+    font-weight: bolder;
+    color: #2272FF;
+    margin-top: 5%;
+}
+
+#home hr, #aboutMe hr, #skills hr, #projects hr, #contactMe hr{
+    margin-top: 3%;
+}
+
+#home p, #aboutMe p, #skills p, #projects p, #contactMe p{
+    font-size: 19px;
+    font-weight: bolder;
+    margin-top: 5%;
+}
+
+
+/* ------------------ for mobile screens -------------------- */
+
+@media(min-width: 300px){
+    #container{
+        background-color: black;
+        display: flex;
+        position: initial;
+    }
+
+    #container #secondDiv{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 99.8vh;
+        right: 100%;
+    }
+
+    #secondDiv a{
+        margin-top: 12%;
+    }
+
+    #secondDiv #firstA{
+        margin-top: 15%;
+    }
+
+    #secondDiv #firstButton{
+        margin-top: 12%;
+    }
+
+    #secondDiv #crossIcon{
+        margin-top: 5%;
+        opacity: 1;
+        font-size: 55px;
+    }
+
+    #container #threeBarsIcon{
+        opacity: 1;
+    }
+
+    #container #navBarName{
+        margin: auto 3%;
+        margin-left: 10%;
+    }
+
+    #home h1, #aboutMe h1, #skills h1, #projects h1, #contactMe h1{
+        font-size: 26px;
+        font-weight: bolder;
+    }
+}
+
+/* ------------------ for tablet screens -------------------- */
+
+@media(min-width: 550px){
+    #container{
+        background-color: black;
+        display: flex;
+        position: initial;
+    }
+
+    #container #secondDiv{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 99.8vh;
+        right: 100%;
+    }
+
+    #secondDiv a{
+        margin-top: 12%;
+    }
+
+    #secondDiv #firstA{
+        margin-top: 15%;
+    }
+
+    #secondDiv #firstButton{
+        margin-top: 8%;
+    }
+
+    #secondDiv #crossIcon{
+        margin-top: 5%;
+        opacity: 1;
+        font-size: 65px;
+    }
+
+    #container #threeBarsIcon{
+        opacity: 1;
+    }
+
+    #container #navBarName{
+        margin: auto 3%;
+        margin-left: 14%;
+    }
+
+    #home h1, #aboutMe h1, #skills h1, #projects h1, #contactMe h1{
+        font-size: 35px;
+        font-weight: bolder;
+    }
+}
+
+/* ------------------ for laptop screens -------------------- */
+
+@media(min-width: 900px){
+    #container{
+        background-color: black;
+        /* position: static; */
+        position: initial;
+    }
+
+    #container #secondDiv{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        height: auto;
+        right: 0%;
+        margin-right: 17%;
+        /* position: static; */
+        position: initial;
+    }
+
+    #secondDiv a{
+        margin-top: 0%;
+    }
+
+    #secondDiv #firstA{
+        margin-top: 0%;
+    }
+
+    #secondDiv #firstButton{
+        margin-top: .8%;
+    }
+
+    #secondDiv #crossIcon{
+        margin-top: 0%;
+        opacity: 0;
+        font-size: 35px;
+    }
+
+    #container #threeBarsIcon{
+        opacity: 0;
+    }
+
+    #container #navBarName{
+        margin: auto 0%;
+    }
+
+    #home h1, #aboutMe h1, #skills h1, #projects h1, #contactMe h1{
+        font-size: 70px;
+        font-weight: bolder;
+    }
+}
